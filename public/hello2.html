@@ -10,16 +10,16 @@
   <div id="app">
     <h1>{{ title }}</h1>
     <p>{{ body }}</p>
-    <p v-show="show">a</p>
+    <p v-show="show1">a</p>
   </div>
 
   <script type="text/javascript">
-    var app = new Vue({
+    const app = new Vue({
       el: '#app',
       data: {
         title: 'hello world',
         body: 'good morning',
-        show: false
+        show1: true
       }
     })
 
