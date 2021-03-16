@@ -7,7 +7,15 @@ const timer = setInterval(() => {
   }
 }, 1000)
 
+const time=()=>{
+  console.log(new Date())
+  count += 1
+  if (count >= 10) {
+    clearInterval(timer)
+  }
+}
 
+const timer2= setInterval(time,1000)
 
 //for(i=0; i<10; i++){
 //  function printTime(msg) {
